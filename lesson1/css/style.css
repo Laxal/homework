@@ -1,0 +1,55 @@
+body {
+    background-image: url(../img/bg.jpg);
+}
+
+h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+.conteiner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    color: #1b0d14;
+    font-size: 40px;
+    text-align: center;
+}
+
+.header ul li {
+    font-size: 17px;
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+.header ul li:first-child {
+    background: url(../img/fb.png) 0 0 no-repeat;
+}
+.header ul li:nth-child(2) {
+    background: url(../img/gmail.png) 0 0 no-repeat;
+}
+.header ul li:last-child {
+    background: url(../img/tel.jpg) 0 0 no-repeat;
+}
+
+.photo {
+    float: right;
+    box-shadow: 2px 2px 15px black;
+}
+
+.footer {
+    text-align: center;
+}
+.footer div {
+    display: inline-block;
+}
+.UA {
+    color: blue;
+    margin: 20px;
+}
+.EN {
+    color: red;
+    margin: 20px;
+}
