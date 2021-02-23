@@ -1,0 +1,47 @@
+body {
+    font-size: 18px;
+    font-family: serif;
+}
+
+h1 {
+    background-color: #a52a2a;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    max-width: 760px;
+    margin: 0 auto;
+    min-height: 100%;
+}
+
+table {
+    border-spacing: 3px;
+    margin: 0 auto;
+}
+
+.cars {
+    border: 3px dashed black;
+}
+
+.cars {
+}
+.footer {
+    background-color: #000000;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    height: 25px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.blue {
+    color: blue;
+}
