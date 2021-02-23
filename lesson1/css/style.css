@@ -34,6 +34,13 @@ h2 {
     background: url(../img/tel.jpg) 0 0 no-repeat;
 }
 
+.projects li {
+    font-size: 17px;
+    display: inline-block;
+    padding: 0px 30px;
+    text-align: center;
+}
+
 .photo {
     float: right;
     box-shadow: 2px 2px 15px black;
