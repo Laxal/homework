@@ -1,26 +1,18 @@
-body,
-html {
+body {
     font-size: 18px;
     font-family: serif;
-    height: 100%;
-}
-
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.container {
-    max-width: 760px;
-    margin: 0px auto;
-    flex: 1 1 auto;
 }
 
 h1 {
     background-color: #a52a2a;
     text-align: center;
     color: white;
+}
+
+.container {
+    max-width: 760px;
+    margin: 0 auto;
+    min-height: 100%;
 }
 
 table {
@@ -37,6 +29,7 @@ table {
     font-size: 20px;
     color: white;
     text-align: center;
+    height: 25px;
 }
 
 .bold {
