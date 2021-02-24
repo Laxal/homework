@@ -1,0 +1,114 @@
+body {
+    font-size: 18px;
+    background-color: #990909;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    text-align: center;
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #000;
+    padding-top: 30px;
+    margin-left: 30px;
+}
+
+.nav__item {
+    text-align: center;
+}
+
+.nav__item h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 5px auto;
+    color: white;
+}
+
+.nav__item h2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav__item h2 a:hover {
+    color: springgreen;
+    font-size: 22px;
+}
+
+.nav__item h2 a:active {
+    text-decoration: underline;
+}
+
+.main {
+    display: flex;
+    color: white;
+    margin: 10px 10px 10px 30px;
+}
+
+.left {
+    background-color: #7d0909;
+    padding: 1px 30px 10px 1px;
+}
+.left__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 170px;
+}
+
+.left__list li {
+    margin: 0px 0px 30px 0px;
+}
+
+.left__link {
+    margin: 0px 0px 10px 0px;
+    color: #e95b11;
+}
+
+.left__link:hover {
+    color: white;
+    font-size: 20px;
+}
+
+.left__link:active {
+    color: lightblue;
+}
+
+.right {
+    margin: 0;
+    padding: 0;
+    background-color: #e3dddd;
+}
+
+.right h2 {
+    margin: 0;
+    font-size: 22px;
+    color: black;
+    background-color: #bdbdbd;
+    text-align: center;
+}
+
+.right p {
+    color: black;
+}
+
+.line {
+    border-bottom: 1px solid #a5a5a5;
+    text-align: center;
+    width: 70%;
+    margin: 10px auto;
+}
+
+.footer {
+    background-color: #e95b11;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
