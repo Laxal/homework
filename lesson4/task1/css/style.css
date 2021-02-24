@@ -1,3 +1,8 @@
+body,
+html {
+    height: 100%;
+}
+
 body {
     font-size: 18px;
     font-family: serif;
@@ -9,10 +14,16 @@ h1 {
     color: white;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 .container {
     max-width: 760px;
     margin: 0 auto;
-    min-height: 100%;
+    flex: 1 1 auto;
 }
 
 table {
@@ -29,7 +40,6 @@ table {
     font-size: 20px;
     color: white;
     text-align: center;
-    height: 25px;
 }
 
 .bold {
