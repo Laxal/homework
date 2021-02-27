@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.conteiner {
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+}
+
+.section {
+    max-width: 300px;
+    width: 100%;
+}
+
+.section p {
+    text-align: center;
+    color: #9d9d9d;
+    font-size: 14px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    letter-spacing: 0.08em;
+    line-height: 1.42em;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover .icon {
+    background-color: #fff;
+    border: 1px solid #1275b9;
+}
+
+.link__description {
+    display: block;
+    width: 100%;
+    margin-bottom: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    letter-spacing: 0.08em;
+}
+
+.icon {
+    display: block;
+    margin: 0 auto 18px auto;
+    box-sizing: border-box;
+    width: 63px;
+    height: 63px;
+    background-color: #1275b9;
+    border: 1px solid #1275b9;
+    border-radius: 50%;
+}
+
+.icon1 {
+    background: #1275b9 url(/icon/Tablet.svg) center no-repeat;
+}
+
+.link:hover .icon1 {
+    background: #fff url(/icon/Tablet_hover.svg) center no-repeat;
+}
+
+.icon2 {
+    background: #1275b9 url(/icon/Settings.svg) center no-repeat;
+}
+
+.link:hover .icon2 {
+    background: #fff url(/icon/Settings_hover.svg) center no-repeat;
+}
+
+.icon3 {
+    background: #1275b9 url(/icon/Dashboard.svg) center no-repeat;
+}
+
+.link:hover .icon3 {
+    background: #fff url(/icon/Dashboard_hover.svg) center no-repeat;
+}
