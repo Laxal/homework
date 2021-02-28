@@ -19,6 +19,7 @@ body {
     box-sizing: border-box;
     background-color: #3b3f45;
     border: 24px solid #fff;
+    overflow: auto;
 }
 .title {
     max-height: 114px;
