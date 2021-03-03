@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Sans&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 135px 0;
+
+    text-align: center;
+}
+
+/* header */
+
+.header {
+    max-width: 620px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.suptittle {
+    font-size: 12px;
+    line-height: 1.4em;
+    font-weight: 700;
+    color: #898f99;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    margin-bottom: 32px;
+}
+
+.tittle {
+    font-size: 48px;
+    line-height: 1em;
+    font-weight: 400;
+    color: #0ec8cb;
+    text-transform: uppercase;
+    margin-bottom: 38px;
+}
+
+.tittle-text {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.4em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    color: #999999;
+    text-transform: uppercase;
+    margin-bottom: 38px;
+}
+
+/* iconboxes */
+
+.iconboxes {
+    display: flex;
+    align-items: stretch;
+}
+
+.iconboxes__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 25%;
+    padding: 55px 25px 80px 32px;
+    background-color: #f7f7f7;
+    border: 1px solid #ececec;
+
+    font-size: 14px;
+}
+
+.iconboxes__tittle::before {
+    content: "";
+    display: block;
+    height: 66px;
+    width: 64px;
+    margin: 20px auto 20px;
+}
+
+.icon1::before {
+    background: url(/img/Anchor.png) center no-repeat;
+}
+.icon2::before {
+    background: url(/img/Diamond.svg) center no-repeat;
+}
+.icon3::before {
+    background: url(/img/Eyeglasses.png) center no-repeat;
+}
+.icon4::before {
+    background: url(/img/Monitor.png) center no-repeat;
+}
+
+.iconboxes__tittle {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+    color: #1b1b1b;
+}
+
+.iconboxes__text {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    color: #777777;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+/* iconbox hover */
+
+.iconboxes__section:hover {
+    background-color: #0ec8cb;
+    color: #fff;
+}
+
+.iconboxes__section:hover .iconboxes__tittle {
+    color: #fff;
+}
+
+.iconboxes__section:hover .iconboxes__text {
+    color: #fff;
+}
+
+.iconboxes__section:hover .icon1::before {
+    background: url(/img/Anchor_hover.svg) center no-repeat;
+}
+.iconboxes__section:hover .icon2::before {
+    background: url(/img/Diamond_hover.png) center no-repeat;
+}
+.iconboxes__section:hover .icon3::before {
+    background: url(/img/Eyeglasses_hover.svg) center no-repeat;
+}
+.iconboxes__section:hover .icon4::before {
+    background: url(/img/Monitor_hover.svg) center no-repeat;
+}
