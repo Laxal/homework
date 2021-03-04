@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.1s ease-in;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-size: 20px;
+}
+
+p {
+    font-size: 17px;
+}
+
+.wrapper {
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #3399cc;
+    border: 24px solid #2b81ac;
+}
+
+.container {
+    max-width: 986px;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    padding: 35px 0;
+}
+
+/* Title */
+
+.title .wi-sunrise {
+    font-size: 0.9em;
+}
+
+.title {
+    font-size: 23px;
+    margin-bottom: 35px;
+}
+
+/* Weather list */
+
+.weather-container {
+    background-color: #fff;
+}
+
+.weather {
+    box-sizing: border-box;
+    border: 3px solid #fff;
+    font-size: 0;
+    margin-bottom: 35px;
+}
+
+.weather__item {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 3px solid #fff;
+    text-align: center;
+    font-size: 20px;
+    line-height: 2em;
+    padding: 15px 0;
+}
+
+.weather__item span {
+    opacity: 0.75;
+}
+
+.wi {
+    font-size: 1.5em;
+}
+
+.item1 {
+    width: 50%;
+    background-color: #3399cc;
+}
+
+.item2 {
+    width: 25%;
+    background-color: #33cccc;
+}
+
+.item3 {
+    width: 25%;
+    background-color: #996699;
+}
+
+.item4 {
+    width: 25%;
+    background-color: #c24747;
+}
+
+.item5 {
+    width: 25%;
+    background-color: #e2674a;
+}
+
+.item6 {
+    width: 25%;
+    background-color: #ffcc66;
+}
+
+.item7 {
+    width: 25%;
+    background-color: #99cc99;
+}
+
+.item8 {
+    width: 25%;
+    background-color: #669999;
+}
+
+.item9 {
+    width: 50%;
+    background-color: #cc6699;
+}
+
+.item10 {
+    width: 25%;
+    background-color: #339966;
+}
+
+.item11 {
+    width: 100%;
+    background-color: #666699;
+}
+
+/* Weather list hover */
+
+.weather:hover > :not(.weather__item:hover) {
+    opacity: 0.5;
+}
