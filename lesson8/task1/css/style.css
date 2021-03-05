@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1200px;
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 50px 30px;
+
+    background-color: #fdde7e;
+}
+
+.item {
+    width: 361px;
+    height: 441px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 38px 100px 36px;
+
+    background-color: #fff;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.item:nth-child(2) {
+    height: 500px;
+    padding: 44px 100px 52px;
+}
+
+.price {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #02995b;
+    font-size: 58px;
+
+    margin-bottom: 50px;
+}
+
+.img {
+    position: relative;
+    width: 135px;
+    height: 77px;
+}
+
+.img::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -61px;
+    left: 33px;
+    width: 49px;
+    height: 46px;
+}
+
+.img .bean {
+    position: absolute;
+    left: 42px;
+    top: 15px;
+
+    opacity: 0.2;
+}
+
+.img1 {
+    background: url(/img/cup-orange.svg) center no-repeat;
+}
+
+.img1::before {
+    background: url(/img/smoke-orange.svg) center top no-repeat;
+}
+
+.img2 {
+    background: url(/img/cup-gold.svg);
+}
+
+.img2::before {
+    background: url(/img/smoke-gold.svg);
+}
+
+.img3 {
+    background: url(/img/cup-grey.svg);
+}
+
+.img3::before {
+    background: url(/img/smoke-grey.svg);
+}
+
+.name {
+    color: #333333;
+    font-size: 44px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.item:nth-child(2) .name {
+    font-size: 57px;
+    letter-spacing: 3px;
+}
+
+.text {
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+}
