@@ -8,7 +8,7 @@ body {
     height: 100%;
     background-color: #e2e7ec;
 
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "HansKendrick", sans-serif;
 }
 
 .wrapper {
@@ -132,4 +132,11 @@ body {
 
     padding-right: 15px;
     background: url(/img/download-img.png) center no-repeat;
+}
+
+@font-face {
+    font-family: "HansKendrick";
+    src: url(/font/HansKendrick-Regular.otf) format(embedded-opentype);
+    font-weight: normal;
+    font-style: normal;
 }
