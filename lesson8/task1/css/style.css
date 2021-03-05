@@ -65,6 +65,8 @@
     left: 33px;
     width: 49px;
     height: 46px;
+
+    opacity: 0.5;
 }
 
 .img .bean {
