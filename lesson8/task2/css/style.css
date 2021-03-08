@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background-color: #e2e7ec;
+
+    font-family: "HansKendrick", sans-serif;
+}
+
+.wrapper {
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 91px;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    max-height: 541px;
+    height: 100%;
+    margin-bottom: 19px;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-between;
+    max-height: 541px;
+    height: 100%;
+}
+
+.banner {
+    background: url(/img/banner.jpeg) center no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 541px;
+
+    flex: 2 0 740px;
+    margin-right: 19px;
+}
+
+.gradient {
+    flex: 0.6 1 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding: 40px 44px;
+
+    color: #fff;
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.banner .date {
+    opacity: 0.5;
+    font-size: 13px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+.title {
+    font-size: 30px;
+    font-weight: 300;
+    max-width: 433px;
+}
+.column {
+    flex: 1 2 360px;
+    display: flex;
+    flex-direction: column;
+    height: 541px;
+    position: relative;
+
+    margin-right: 19px;
+
+    background-color: #fff;
+}
+
+.col__header {
+    margin-bottom: 28px;
+}
+
+.date {
+    font-size: 13px;
+    color: #818181;
+    margin-bottom: 21px;
+}
+
+.col__main {
+    padding: 0 26px 10px 29px;
+}
+.col__title {
+    font-size: 22px;
+    color: #1d1d1d;
+    text-transform: uppercase;
+}
+.col__footer {
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    padding-left: 29px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 13px;
+    color: #99a5b0;
+    text-align: center;
+    margin: 87px auto;
+}
+
+.footer::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 28px;
+
+    padding-right: 15px;
+    background: url(/img/download-img.png) center no-repeat;
+}
+
+@font-face {
+    font-family: "HansKendrick";
+    src: url(/font/HansKendrick-Regular.otf) format(embedded-opentype);
+    font-weight: normal;
+    font-style: normal;
+}
