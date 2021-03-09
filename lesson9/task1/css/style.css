@@ -1,0 +1,98 @@
+/* Скидання стилів */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+/* =============================================== */
+
+body {
+    background-color: #fefefe;
+}
+
+.wrapper {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 141px 138px 120px 121px;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1141px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.3em;
+    color: #171717;
+}
+
+.title {
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 35px;
+}
+
+.text {
+    color: #8c8c8c;
+    margin-bottom: 50px;
+    clear: left;
+}
+
+.text:last-of-type {
+    margin-bottom: 25px;
+}
+
+.text:first-of-type::first-letter {
+    float: left;
+    padding: 15px 25px 30px 15px;
+    color: #171717;
+
+    font-family: "Playfair Display", serif;
+    font-size: 78px;
+}
+
+.qoute {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    color: #8c8c8c;
+}
+
+.qoute::before {
+    content: "\201C";
+    font-size: 35px;
+    font-weight: 400;
+    padding: 0 10px;
+}
+
+.button {
+    display: block;
+    margin-top: 38px;
+    padding: 22px 78px;
+    border: 2px solid #eaa258;
+
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #eaa258;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+.button:hover {
+    background-color: rgba(231, 26, 112, 0.808);
+}
