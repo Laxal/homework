@@ -32,10 +32,10 @@ button {
 body {
     background-color: #464f54;
     padding: 150px 70px 0 70px;
+    position: relative;
 }
 
 .wrapper {
-    position: relative;
     max-width: 1060px;
     width: 100%;
     height: 100%;
@@ -44,15 +44,11 @@ body {
     padding: 220px 113px 0px 123px;
 }
 
-/* ? як спозиціонувати хедер 
-    1. Щоб він був відносно вкфпера
-    2. щоб не з'являлось бокового скролу */
-
 .header {
     position: absolute;
-    width: 100%;
-    margin-left: 130px;
-    top: -100px;
+    width: 72%;
+    right: 0;
+    top: 47px;
 }
 
 .input-container {
