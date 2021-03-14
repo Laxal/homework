@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+@font-face {
+    font-family: "PlayFairDisplay";
+    src: url(/fonts/PlayfairDisplay-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(/fonts/Proxima\ Nova\ Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    outline: none;
+}
+
+body {
+    background-color: #464f54;
+    padding: 150px 70px 0 70px;
+    position: relative;
+}
+
+.wrapper {
+    max-width: 1060px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: #fff url(/img/Document-Line.png) 65px 0 repeat-y;
+    padding: 220px 113px 0px 123px;
+}
+
+.header {
+    position: absolute;
+    width: 72%;
+    right: 0;
+    top: 47px;
+}
+
+.input-container {
+    background-color: #181818;
+    padding: 50px 0 50px 90px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+.input-subtitle {
+    display: block;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 15px;
+    color: #777777;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 15px;
+}
+
+.input-field {
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    padding-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #303030;
+
+    font-family: "PlayFairDisplay", serif;
+    font-size: 48px;
+    color: #fefefe;
+}
+
+.Panel-control {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 22px 25px;
+    background-color: #f7bc2c;
+    margin-left: 65px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+    font-size: 26px;
+    color: #fff;
+    opacity: 0.5;
+    margin-right: 30px;
+}
+
+.icon:hover,
+.icon:active,
+.icon:focus {
+    opacity: 1;
+}
+
+.main {
+    padding-bottom: 70px;
+}
+
+.main .text:last-of-type {
+    margin-bottom: 0;
+}
+
+.author {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 15px;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    color: #b4b4b4;
+    letter-spacing: 0.2em;
+    margin-bottom: 35px;
+}
+
+.title {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 56px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #2a2a2a;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1;
+    color: #8f8f8f;
+    margin-bottom: 70px;
+}
+.text {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1.25em;
+    color: #000;
+    margin-bottom: 38px;
+}
