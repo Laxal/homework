@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/icon.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>homework12_1</title>
+</head>
+
+<body>
+    <main class="module">
+        <div class="module__container">
+            <div class="module__actions flex">
+                <button class="module__action module__action_active">Sign in</button>
+                <button class="module__action">Join us</button>
+            </div>
+            <form action="/api/module" method="POST" class="module__form">
+                <div class="module__input_text">
+                    <label for="username">Username</label>
+                    <input type="text" id="username">
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                </div>
+                <div class="module__input_checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox" checked>
+                    <label for="checkbox">Keep me signed in</label>
+                </div>
+                <button type="submit" class="module__button">Sign in</button>
+            </form>
+            <div class="module__links flex">
+                <a href="#" class="module__link">Forgot password</a>
+                <a href="#" class="module__link">Create an account</a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
