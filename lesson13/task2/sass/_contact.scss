@@ -1,5 +1,9 @@
-.about {
-    padding: 160px 30px;
+.contact {
+    padding: 134px 30px 77px 30px;
+
+    &__text {
+        margin-bottom: 40px;
+    }
 
     @media screen and (max-width: 991px) {
         padding: 70px 30px;
@@ -16,6 +20,10 @@
         &__container {
             padding: 50px 30px;
         }
+
+        &__text {
+            margin-bottom: 30px;
+        }
     }
 
     @media screen and (max-width: 575px) {
@@ -29,11 +37,33 @@
             padding: 30px 15px;
         }
 
+        &__text {
+            margin-bottom: 20px;
+        }
+
         .container_border {
             &::before,
             &::after {
                 width: 23%;
             }
         }
+    }
+}
+
+.footer {
+    padding-bottom: 30px;
+    &__logo {
+        width: 35px;
+        height: 37px;
+        margin: 10px 35px 10px 10px;
+    }
+    &__text {
+        font-size: 14px;
+        color: $dark-color;
+        font-weight: 400;
+    }
+
+    .container {
+        padding: 0;
     }
 }

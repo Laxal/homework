@@ -159,14 +159,8 @@
     width: 100%;
     min-height: 1px;
 }
-
 .col_special {
     padding-bottom: 30px;
-}
-
-.col-8 {
-    flex: 0 0 calc(100% / 12 * 8);
-    max-width: calc(100% / 12 * 8);
 }
 .col-4 {
     flex: 0 0 calc(100% / 12 * 4);
@@ -176,7 +170,10 @@
     flex: 0 0 calc(100% / 12 * 6);
     max-width: calc(100% / 12 * 6);
 }
-
+.col-8 {
+    flex: 0 0 calc(100% / 12 * 8);
+    max-width: calc(100% / 12 * 8);
+}
 .col-12 {
     flex: 0 0 calc(100% / 12 * 12);
     max-width: calc(100% / 12 * 12);
