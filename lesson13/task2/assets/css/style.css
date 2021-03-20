@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+.container {
+  position: relative;
+  max-width: 903px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 170px 20px 180px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+.container_border {
+  border: 1px solid #3c3c3c;
+  border-top: none;
+}
+
+.container_border::before, .container_border::after {
+  content: "";
+  width: 30%;
+  height: 1px;
+  position: absolute;
+  top: 0px;
+  background-color: #3c3c3c;
+}
+
+.container_border::before {
+  left: -1px;
+}
+
+.container_border::after {
+  right: -1px;
+}
+
+.title {
+  font-size: 34px;
+  letter-spacing: 5px;
+  color: #3c3c3c;
+  font-weight: 700;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #3c3c3c;
+  font-weight: 300;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #ffffff;
+}
+
+.main {
+  position: relative;
+  background: url(/assets/img/main-bg.jpg) right/cover no-repeat;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__container {
+  padding-top: 0;
+}
+
+.main__logo {
+  margin-bottom: 96px;
+}
+
+.main__title {
+  font-size: 54px;
+  letter-spacing: 9px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 53px;
+}
+
+.main__text {
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.main__scroll {
+  position: absolute;
+  bottom: 10%;
+}
+
+@media screen and (max-width: 991px) {
+  .main__logo {
+    margin-bottom: 50px;
+  }
+  .main__title {
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main__logo {
+    margin-bottom: 40px;
+  }
+  .main__title {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .main__container {
+    padding: 0 90px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .main__logo {
+    margin-bottom: 30px;
+  }
+  .main__title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .main__container {
+    padding: 0 45px;
+  }
+  .main__scroll {
+    bottom: 5%;
+  }
+}
+
+.about {
+  padding: 160px 30px;
+}
+
+@media screen and (max-width: 991px) {
+  .about {
+    padding: 100px 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    padding: 50px 20px;
+  }
+  .about__title {
+    font-size: 28px;
+    top: -40px;
+  }
+  .about__container {
+    padding: 50px 30px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .about {
+    padding: 30px 15px;
+  }
+  .about__title {
+    font-size: 24px;
+  }
+  .about__container {
+    padding: 30px 15px;
+  }
+  .about .container_border::before, .about .container_border::after {
+    width: 23%;
+  }
+}
+
+.services {
+  background: url(/assets/img/services-bg.jpg) center/cover no-repeat;
+  padding: 127px 30px 109px;
+}
+
+.services * {
+  color: #ffffff;
+}
+
+.services .container_border {
+  border-color: #ffffff;
+}
+
+.services .container_border::before, .services .container_border::after {
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 991px) {
+  .services {
+    padding: 100px 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .services {
+    padding: 50px 20px;
+  }
+  .services__title {
+    font-size: 28px;
+    top: -40px;
+  }
+  .services__container {
+    padding: 50px 30px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .services {
+    padding: 30px 15px;
+  }
+  .services__title {
+    font-size: 24px;
+    top: -35px;
+  }
+  .services__container {
+    padding: 30px 15px;
+  }
+  .services .container_border::before, .services .container_border::after {
+    width: 23%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

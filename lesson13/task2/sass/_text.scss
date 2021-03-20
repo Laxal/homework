@@ -1,0 +1,18 @@
+.title {
+    font-size: 34px;
+    letter-spacing: 5px;
+    color: $dark-color;
+    font-weight: 700;
+
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text {
+    font-size: 16px;
+    line-height: 24px;
+    color: $dark-color;
+    font-weight: 300;
+}
