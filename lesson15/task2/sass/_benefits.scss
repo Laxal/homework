@@ -1,0 +1,92 @@
+.benefits {
+    padding: 105px 30px 115px 30px;
+
+    &__container {
+        padding: 115px 170px 90px 180px;
+    }
+
+    @media screen and (max-width: 991px) {
+        padding: 70px 30px;
+
+        &__container {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 50px 20px;
+
+        &__title {
+            font-size: 28px;
+            top: -40px;
+        }
+
+        &__container {
+            padding: 50px 30px;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        padding: 30px 15px;
+
+        &__title {
+            font-size: 22px;
+        }
+
+        &__container {
+            padding: 30px 15px;
+        }
+
+        .container_border {
+            &::before,
+            &::after {
+                width: 23%;
+            }
+        }
+    }
+}
+
+.profit {
+    margin-bottom: 80px;
+    color: $dark-color;
+
+    &__title {
+        font-size: 20px;
+        letter-spacing: 3px;
+        font-weight: 700;
+    }
+
+    &__text {
+        font-size: 15px;
+        line-height: 26px;
+        font-weight: 300;
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 40px;
+
+        &__title {
+            font-size: 19px;
+        }
+
+        &__svg {
+            width: 65px;
+            height: 65px;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+        &__title {
+            font-size: 18px;
+        }
+
+        &__svg {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
