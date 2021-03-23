@@ -1,0 +1,468 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;500&family=Roboto:wght@900&display=swap");
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+label,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+$color-accent: #ffcc00;
+$color-facebook: #4267b2;
+$coclor-twitter: #1da1f2;
+$color-linkedin: #0072b1;
+$color-google: #db4a39;
+
+$gutter-primary: 30px;
+
+// --------------------------------------------------------------------------------------------------------------------------
+.container {
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.our-team {
+    background-color: #fff;
+    padding: 110px 0 95px 0;
+    font-family: "Raleway", sans-serif;
+
+    &-title-group {
+        max-width: 450px;
+        width: 100%;
+        margin: 0 auto 50px;
+        text-align: center;
+
+        &__suptitle {
+            font-size: 18px;
+            letter-spacing: 0px;
+            line-height: 24px;
+            color: #898f8f;
+            font-weight: 500;
+            margin-bottom: ($gutter-primary/2);
+        }
+        &__title {
+            font-size: 60px;
+            line-height: 1.1em;
+            color: $color-accent;
+            font-weight: 900;
+            font-family: "Roboto";
+            padding-bottom: $gutter-primary * 1.5;
+        }
+
+        &__icon-group {
+            position: relative;
+            &::before,
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: 50%;
+                width: (210 / 450 * 100%);
+                height: 2px;
+                background-color: $color-accent;
+            }
+
+            &::after {
+                right: 0;
+            }
+        }
+    }
+
+    &-slider {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding: 0 30px;
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        &__controls {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            z-index: 1;
+            background-color: transparent;
+
+            label {
+                transition: opacity 0.2s ease-out;
+                display: none;
+                width: 35px;
+                height: 35px;
+                opacity: 0.5;
+                border-top: 4px solid $color-accent;
+                border-right: 4px solid $color-accent;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+        #slide1:checked ~ &__controls label:nth-child(3),
+        #slide2:checked ~ &__controls label:nth-child(1),
+        #slide3:checked ~ &__controls label:nth-child(2) {
+            display: block;
+            transform: rotate(-135deg);
+            position: absolute;
+            left: -10px;
+        }
+
+        #slide1:checked ~ &__controls label:nth-child(2),
+        #slide2:checked ~ &__controls label:nth-child(3),
+        #slide3:checked ~ &__controls label:nth-child(1) {
+            display: block;
+            transform: rotate(45deg);
+            position: absolute;
+            right: 40px;
+        }
+
+        &__bullets {
+            display: flex;
+            justify-content: center;
+
+            label {
+                width: 10px;
+                height: 10px;
+                background-color: $color-accent;
+                border: 1px solid $color-accent;
+                border-radius: 50%;
+            }
+
+            label:not(:nth-last-child(1)) {
+                margin-right: 10px;
+            }
+        }
+
+        #slide1:checked ~ &__bullets label:nth-child(1),
+        #slide2:checked ~ &__bullets label:nth-child(2),
+        #slide3:checked ~ &__bullets label:nth-child(3) {
+            transform: scale(1.2);
+            background-color: transparent;
+        }
+    }
+
+    &-slide {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex: 1;
+        margin-bottom: $gutter-primary;
+
+        &__img-box {
+            width: 49%;
+            flex: 0 0 49%;
+            padding: ($gutter-primary * 2.5) 10px ($gutter-primary * 2.5) 0;
+
+            .inner-img-box {
+                position: relative;
+                max-width: 425px;
+                width: 100%;
+                padding: 5%;
+
+                img {
+                    border: 2px solid $color-accent;
+                    max-width: 100%;
+                }
+
+                .fake-border::after,
+                .fake-border::before {
+                    content: "";
+                    position: absolute;
+                    background-color: $color-accent;
+                }
+
+                .fake-border::after {
+                    width: 25%;
+                    height: 1px;
+                }
+
+                .fake-border::before {
+                    width: 1px;
+                    height: 25%;
+                }
+
+                .y-top::before,
+                .y-top::after {
+                    top: 0;
+                }
+
+                .y-bottom::before,
+                .y-bottom::after {
+                    bottom: 0;
+                }
+
+                .x-left::before,
+                .x-left::after {
+                    left: 0;
+                }
+
+                .x-right::before,
+                .x-right::after {
+                    right: 0;
+                }
+            }
+        }
+
+        &__separate-line {
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background-color: $color-accent;
+        }
+
+        .our-team-caption-box {
+            width: 49%;
+            flex: 0 0 49%;
+            padding: $gutter-primary * 2 0 $gutter-primary * 2 10px;
+            max-width: 425px;
+            text-align: center;
+
+            &__title {
+                position: relative;
+                font-size: 36px;
+                letter-spacing: 1px;
+                line-height: 1.3;
+                color: #666666;
+                font-weight: 900;
+                font-family: "Roboto";
+                padding-bottom: $gutter-primary;
+                margin-bottom: $gutter-primary;
+
+                &::after {
+                    content: "";
+                    width: 30%;
+                    height: 1px;
+                    background-color: $color-accent;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            &__profession {
+                font-size: 24px;
+                line-height: 36px;
+                color: #666666;
+                font-weight: 400;
+                margin-bottom: $gutter-primary;
+            }
+
+            &__social {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: $gutter-primary;
+
+                &-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-sizing: border-box;
+                    width: 31px;
+                    height: 31px;
+                    font-size: 15px;
+                    color: #cccccc;
+                    margin-right: 5px;
+                    padding: 4px;
+                    border: 1px solid #cccccc;
+                    border-radius: 50%;
+                    transition: all 0.3s ease-out;
+                }
+                .facebook:hover {
+                    color: $color-facebook;
+                    border-color: $color-facebook;
+                }
+                .twitter:hover {
+                    color: $coclor-twitter;
+                    border-color: $coclor-twitter;
+                }
+                .google:hover {
+                    color: $color-google;
+                    border-color: $color-google;
+                }
+                .linkedin:hover {
+                    color: $color-linkedin;
+                    border-color: $color-linkedin;
+                }
+            }
+
+            &__text {
+                max-width: 420px;
+                font-size: 14px;
+                line-height: 24px;
+                color: #333333;
+                font-weight: 500;
+                margin-bottom: 25px;
+            }
+
+            &__separate-line {
+                position: relative;
+                width: 20px;
+                height: 4px;
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 25px;
+
+                background-color: $color-accent;
+
+                &::before,
+                &::after {
+                    content: "";
+                    width: 10px;
+                    height: 4px;
+                    position: absolute;
+                    top: 0;
+                    background-color: $color-accent;
+                }
+                &::before {
+                    right: calc(50% + 15px);
+                }
+                &::after {
+                    left: calc(50% + 15px);
+                }
+            }
+
+            &__button {
+                display: inline-block;
+                padding: 0 10px;
+
+                border: 1px solid $color-accent;
+
+                text-decoration: none;
+                font-size: 14px;
+                line-height: 1.7em;
+                color: #666666;
+                font-weight: 700;
+                font-family: "Open Sans";
+                transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: yellow;
+                }
+
+                &:active {
+                    transform: scale(0.97);
+                    box-shadow: inset 0 0 2px 1px rgba($color: #000000, $alpha: 0.2);
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 50px 0;
+
+        &-title-group {
+            &__title {
+                font-size: 50px;
+                padding-bottom: $gutter-primary;
+            }
+        }
+
+        &-slider {
+            &__controls {
+                display: none;
+            }
+        }
+
+        &-slide {
+            flex-direction: column;
+            margin-bottom: $gutter-primary/2;
+
+            &__separate-line {
+                display: none;
+            }
+
+            &__img-box {
+                width: 100%;
+                flex: 0 0 100%;
+                padding: 0;
+
+                .inner-img-box {
+                    margin: 0 auto;
+                }
+            }
+
+            .our-team-caption-box {
+                width: 100%;
+                flex: 0 0 100%;
+                padding: $gutter-primary 10px;
+
+                &__title {
+                    padding-bottom: $gutter-primary/2;
+                    margin-bottom: $gutter-primary/2;
+                }
+                &__profession {
+                    margin-bottom: $gutter-primary/2;
+                }
+                &__social {
+                    margin-bottom: $gutter-primary/2;
+                }
+
+                &__button {
+                    width: 50%;
+                    font-size: 18px;
+                    line-height: 2.5em;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        padding: 30px 0;
+
+        &-title-group {
+            margin: 0 auto $gutter-primary/2;
+
+            &__title {
+                font-size: 40px;
+                padding-bottom: $gutter-primary/2;
+            }
+        }
+
+        &-slide {
+            margin-bottom: $gutter-primary/6;
+
+            .our-team-caption-box {
+                padding: $gutter-primary/2 10px;
+
+                &__title {
+                    font-size: 30px;
+                    padding-bottom: $gutter-primary/4;
+                    margin-bottom: $gutter-primary/4;
+                }
+                &__profession {
+                    font-size: 20px;
+                    margin-bottom: $gutter-primary/4;
+                }
+                &__social {
+                    margin-bottom: $gutter-primary/4;
+                }
+
+                &__button {
+                    width: 90%;
+                    font-size: 18px;
+                    line-height: 2.5em;
+                }
+            }
+        }
+    }
+}
