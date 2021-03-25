@@ -1,0 +1,201 @@
+.contact {
+    background: url(/assets/img/form-bg.webp) center / cover no-repeat;
+    // height: 867px;
+    font-family: "Raleway", sans-serif;
+    padding: 100px 0 115px 0;
+
+    &-flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__title {
+        font-size: 90px;
+        line-height: 1;
+        font-weight: 700;
+        text-align: center;
+        color: #262626;
+        margin: 0px;
+        margin-bottom: 45px;
+    }
+
+    &__subtext {
+        max-width: 360px;
+        margin: 0 auto;
+        font-size: 17px;
+        line-height: 25px;
+        color: #262626;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    &-form {
+        max-width: 500px;
+        width: 100%;
+        margin-right: 170px;
+    }
+
+    &-form_input {
+        width: 100%;
+        appearance: none;
+        outline: none;
+        border: none;
+        background-color: rgba(0, 196, 196, 0.5);
+        padding: 20px;
+        margin-bottom: 15px;
+
+        font-family: inherit;
+        font-size: 15px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    &-form_input:hover {
+        background-color: #00c4c4;
+    }
+
+    &-form_input:focus {
+        background-color: #00c4c4;
+        border-left: 5px solid #355b82;
+        padding-left: 15px;
+    }
+
+    textarea.contact-form_input {
+        resize: none;
+        height: 250px;
+    }
+
+    &-form_input::placeholder {
+        font-family: inherit;
+        font-size: 15px;
+        font-weight: 300;
+        color: #fff;
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts__item {
+        margin-bottom: 18px;
+        font-size: 17px;
+        line-height: 25px;
+        color: #262626;
+    }
+    .contacts__title {
+        font-weight: 700;
+    }
+    .contacts__text {
+        font-weight: 300;
+    }
+
+    @media screen and (max-width: 1200px) {
+        padding: 70px 0;
+    }
+
+    @media screen and (max-width: 992px) {
+        padding: 50px 0;
+
+        &__title {
+            font-size: 70px;
+            margin-bottom: 25px;
+        }
+
+        &-form {
+            margin-right: 70px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        padding: 30px 0;
+
+        &__title {
+            font-size: 50px;
+        }
+    }
+    @media screen and (max-width: 576px) {
+        padding: 20px 0;
+
+        &-flex {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-form {
+            margin-right: 0;
+        }
+
+        .contacts {
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            &__item:not(:nth-last-child(1)) {
+                margin-right: 20px;
+            }
+            &__title {
+                margin: 0;
+                line-height: 1.2em;
+            }
+
+            &__text {
+                margin: 0;
+                line-height: 1.1em;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: #262626;
+
+    &-container {
+        padding: 2rem 0;
+    }
+
+    .copy {
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 300;
+        color: #b9b9b9;
+    }
+    .logo {
+        font-size: 25px;
+        line-height: 25px;
+        color: #b9b9b9;
+        font-weight: 400;
+        font-family: "Pacifico", cursive;
+    }
+    .author {
+        font-size: 15px;
+        line-height: 25px;
+        color: #b9b9b9;
+        font-weight: 300;
+    }
+
+    .author span {
+        font-weight: 700;
+        color: #ff2b58;
+    }
+
+    @media screen and (max-width: 576px) {
+        &-container {
+            padding: 1rem 0;
+            *:not(:nth-last-child(1)) {
+                margin-right: 15px;
+            }
+        }
+
+        .copy {
+            font-size: 12px;
+            line-height: 14px;
+        }
+        .logo {
+            font-size: 22px;
+            line-height: 22px;
+        }
+        .author {
+            line-height: 18px;
+        }
+    }
+}
