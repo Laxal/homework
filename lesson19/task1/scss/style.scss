@@ -1,0 +1,177 @@
+@import "reset";
+@import "normalize";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+:root {
+    --color-bg: #9789f9;
+    --color-text-dark: #181818;
+    --color-bg-card: #f5f4f9;
+    --color-button-bg1: #6fcffb;
+    --color-button-bg2: #fd8d7b;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 160px 15px 145px;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+
+        padding: 50px 15px;
+    }
+}
+.pricing {
+    background-color: var(--color-bg);
+    font-family: "Bebas Neue", sans-serif;
+    color: var(--color-text-dark);
+    overflow: hidden;
+
+    &-wrapper {
+        width: 100%;
+        margin: -15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+
+    &-card {
+        position: relative;
+        max-width: 328px;
+        width: 100%;
+        background-color: var(--color-bg-card);
+        padding: 40px 0 60px;
+        color: var(--color-text-dark);
+        text-align: center;
+        margin: 15px;
+
+        &--special {
+            padding: 50px 0 35px;
+        }
+
+        &__tape--special {
+            padding: 0.65em 1.5em;
+            position: absolute;
+            top: 15px;
+            right: -85px;
+            z-index: 2;
+
+            background: transparent url(/assets/img/tape-bg.svg) center/contain no-repeat;
+
+            font-size: 16px;
+            letter-spacing: 1px;
+            color: #ffffff;
+            font-weight: 400;
+        }
+
+        &__img--special {
+            position: absolute;
+            top: 2px;
+            right: 2px;
+        }
+
+        &__pricing {
+            font-size: 60px;
+            line-height: 0.8;
+            letter-spacing: 5px;
+            font-weight: 200;
+            margin-bottom: 20px;
+
+            &--top {
+                font-size: 24px;
+                letter-spacing: 2px;
+                vertical-align: top;
+            }
+            &--bottom {
+                font-size: 16px;
+                letter-spacing: 1px;
+                font-weight: 300;
+            }
+        }
+        &__title {
+            font-size: 24px;
+            letter-spacing: 2px;
+            font-weight: 400;
+            margin-bottom: 30px;
+
+            &--special {
+                margin-bottom: 40px;
+            }
+        }
+        &__decor-bg {
+            background-color: #fff;
+            padding: 34px 0 45px;
+            border-radius: 50% 50% / 17% 17% 0 0;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &--special {
+                position: relative;
+                margin-bottom: 45px;
+                padding-bottom: 55px;
+            }
+        }
+        &__icon {
+            font-size: 27px;
+            margin-bottom: 0.5em;
+
+            &--special {
+                margin-bottom: 0.8em;
+            }
+        }
+        &__list {
+            text-align: left;
+        }
+        &__list-item {
+            font-size: 16px;
+            line-height: 3.35em;
+            color: var(--color-text-dark);
+            font-weight: 300;
+            font-family: "Roboto", sans-serif;
+        }
+        &__button {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            outline: none;
+            border: none;
+            padding: 1em 2.5em;
+
+            background-color: var(--color-button-bg1);
+            border-radius: 50%/200%;
+
+            font-size: 18px;
+            letter-spacing: 1px;
+            line-height: 1em;
+            color: #ffffff;
+            font-weight: 700;
+
+            &--special {
+                background-color: var(--color-button-bg2);
+            }
+
+            &:hover {
+                filter: contrast(150%);
+            }
+            &:active {
+                transform: translate(-50%, 50%) scale(0.95);
+                box-shadow: inset 0 0 2px 1px rgba($color: #000000, $alpha: 0.3);
+            }
+        }
+
+        &__footer {
+            font-size: 11px;
+            color: #a9a9a9;
+            font-weight: 300;
+            font-family: "Roboto";
+        }
+    }
+}

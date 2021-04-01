@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 30" width="101" height="30">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #3a3f3f } 
+	</style>
+	<path id="tooltip-bg" class="shp0" d="M19 0L86 0C94.28 0 101 6.72 101 15C101 23.28 94.28 30 86 30L19 30C10.72 30 4 23.28 4 15C4 6.72 10.72 0 19 0ZM0 15L6 8L6 22L0 15" />
+</svg>
