@@ -1,0 +1,16 @@
+button {
+    width: 200px;
+    height: 60px;
+    background-color: rgb(19, 134, 35);
+    color: rgb(94, 247, 226);
+    margin: 20px;
+}
+
+button:hover,
+button:active {
+    background-color: rgb(42, 153, 57);
+}
+
+button:active {
+    transform: scale(0.9);
+}

@@ -1,0 +1,16 @@
+button {
+    width: 200px;
+    height: 60px;
+    background-color: coral;
+    color: cyan;
+    margin: 20px;
+}
+
+button:hover,
+button:active {
+    background-color: rgb(253, 68, 0);
+}
+
+button:active {
+    transform: scale(0.9);
+}
