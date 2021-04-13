@@ -58,7 +58,7 @@ button2.onclick = () => {
     let result;
 
     if (isFinite(number) && Math.trunc(number) === number && number >= 0) {
-        result = getFactorial(number);
+        result = calcFactorial(number);
     }
 
     if (result === undefined) {
