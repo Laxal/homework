@@ -9,7 +9,10 @@ function Car(maker, model, year, everageSpeed) {
     this.showInfo = function () {
         console.log(`Інформація про авто \n`);
         for (let key in this) {
-            console.log(`${key} - ${this[key]}\n`);
+            if (['string', 'number'].includes(typeof this[key])) {
+
+                console.log(`${key} - ${this[key]}\n`);
+            }
         }
     }
 
