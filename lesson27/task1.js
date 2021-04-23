@@ -5,7 +5,7 @@ function Product(name, count = 1, bought = false) {
 }
 
 let listOfProducts = [
-    new Product('Банан', '4шт.', false),
+    new Product('Банан', '4шт.', true),
     new Product('Чорниці', '1кг', false),
     new Product('Домашній сир', '0.5кг', true),
     new Product('Йогурт', '3уп.', true),
@@ -13,13 +13,9 @@ let listOfProducts = [
 ]
 
 function showSortList(arr) {
-    arr.sort((item1, item2) => item1.bought - item2.bought)
+    arr.sort((item1, item2) => item1.bought - item2.bought);
     console.log(arr);
 }
-
-let product1 = new Product('Банан');
-let product2 = new Product('Манго', 5);
-let product3 = new Product('Ананас', '2шт.');
 
 function addProductToList(obj, arr) {
     let isProduct = arr.find(item => item.name === obj.name);
@@ -36,7 +32,12 @@ function buyProduct(name, arr) {
 
 // Тест ================================
 
+// let product1 = new Product('Банан');
+// let product2 = new Product('Манго', 5);
+// let product3 = new Product('Ананас', '2шт.');
 
+
+// console.log(listOfProducts);
 // addProductToList(product1, listOfProducts);
 // addProductToList(product2, listOfProducts);
 // addProductToList(product3, listOfProducts);
