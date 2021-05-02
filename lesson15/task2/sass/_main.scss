@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: $light-color;
+}
+
+.flex_all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main {
+    position: relative;
+    background: url(/assets/img/main-bg.jpg) right / cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        padding-top: 0;
+    }
+
+    &__logo {
+        margin-bottom: 96px;
+    }
+
+    &__title {
+        font-size: 54px;
+        letter-spacing: 9px;
+        font-weight: 700;
+        color: $light-color;
+        margin: 0;
+        margin-bottom: 53px;
+    }
+
+    &__text {
+        font-size: 16px;
+        font-weight: 400;
+        color: $light-color;
+    }
+
+    &__scroll {
+        position: absolute;
+        bottom: 10%;
+    }
+
+    @media screen and (max-width: 991px) {
+        &__logo {
+            margin-bottom: 50px;
+        }
+
+        &__title {
+            font-size: 45px;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        &__logo {
+            margin-bottom: 40px;
+        }
+
+        &__title {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        &__container {
+            padding: 0 90px;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        &__logo {
+            margin-bottom: 30px;
+        }
+
+        &__title {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        &__container {
+            padding: 0 45px;
+        }
+
+        &__scroll {
+            bottom: 5%;
+        }
+    }
+}
