@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex_justify-space-between {
+    justify-content: space-between;
+}
+
+.flex_align-items-center {
+    align-items: center;
+}
+
+.contact {
+    background: url(/img/bg.webp) center / cover no-repeat;
+    height: 867px;
+    font-family: "Raleway", sans-serif;
+    padding-top: 100px;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.contact__title {
+    font-size: 90px;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+    color: #262626;
+    margin-bottom: 45px;
+}
+
+.contact__subtext {
+    max-width: 360px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 25px;
+    color: #262626;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.contact-form {
+    max-width: 500px;
+    width: 100%;
+    margin-right: 170px;
+}
+
+.contact-form_input {
+    width: 100%;
+    appearance: none;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 196, 196, 0.5);
+    padding: 20px;
+    margin-bottom: 15px;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.contact-form_input:hover {
+    background-color: #00c4c4;
+}
+
+.contact-form_input:focus {
+    background-color: #00c4c4;
+    border-left: 5px solid #355b82;
+    padding-left: 15px;
+}
+
+textarea.contact-form_input {
+    resize: none;
+    height: 250px;
+}
+
+.contact-form_input::placeholder {
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.contacts__item {
+    margin-bottom: 18px;
+    font-size: 17px;
+    line-height: 25px;
+    color: #262626;
+}
+.contacts__title {
+    font-weight: 700;
+}
+.contacts__text {
+    font-weight: 300;
+}
+
+.footer {
+    background-color: #262626;
+}
+
+.footer-container {
+    height: 90px;
+}
+
+.copy {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #b9b9b9;
+}
+.logo {
+    font-size: 25px;
+    line-height: 25px;
+    color: #b9b9b9;
+    font-weight: 400;
+    font-family: "Pacifico", cursive;
+}
+.author {
+    font-size: 15px;
+    line-height: 25px;
+    color: #b9b9b9;
+    font-weight: 300;
+}
+
+.author span {
+    font-weight: 700;
+    color: #ff2b58;
+}
