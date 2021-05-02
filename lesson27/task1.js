@@ -20,7 +20,7 @@ function showSortList(arr) {
 function addProductToList(obj, arr) {
     let isProduct = arr.find(item => item.name === obj.name);
 
-    if (isProduct !== undefined) {
+    if (typeof isProduct !== 'undefined') {
         isProduct.count += obj.count;
     } else arr.push(obj);
 }
@@ -32,18 +32,18 @@ function buyProduct(name, arr) {
 
 // Тест ================================
 
-// let product1 = new Product('Банан');
-// let product2 = new Product('Манго', 5);
-// let product3 = new Product('Ананас', '2шт.');
+let product1 = new Product('Банан');
+let product2 = new Product('Манго', 5);
+let product3 = new Product('Ананас', '2шт.');
 
 
-// console.log(listOfProducts);
+console.log(listOfProducts);
 // addProductToList(product1, listOfProducts);
 // addProductToList(product2, listOfProducts);
 // addProductToList(product3, listOfProducts);
 // buyProduct('Чорниці', listOfProducts);
 // buyProduct('Банан', listOfProducts);
 // buyProduct('Апельсин', listOfProducts);
-// showSortList(listOfProducts);
+showSortList(listOfProducts);
 
-// console.log(listOfProducts);
+console.log(listOfProducts);
