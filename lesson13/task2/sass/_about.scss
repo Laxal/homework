@@ -1,0 +1,39 @@
+.about {
+    padding: 160px 30px;
+
+    @media screen and (max-width: 991px) {
+        padding: 70px 30px;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 50px 20px;
+
+        &__title {
+            font-size: 28px;
+            top: -40px;
+        }
+
+        &__container {
+            padding: 50px 30px;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        padding: 30px 15px;
+
+        &__title {
+            font-size: 22px;
+        }
+
+        &__container {
+            padding: 30px 15px;
+        }
+
+        .container_border {
+            &::before,
+            &::after {
+                width: 23%;
+            }
+        }
+    }
+}

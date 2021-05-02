@@ -1,0 +1,213 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container-gallery {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.gallery {
+  background-color: #ffe92f;
+  padding: 100px 0 120px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.gallery__title {
+  font-size: 90px;
+  line-height: 1;
+  color: #262626;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.gallery__subtext {
+  max-width: 630px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 27px;
+  color: #262626;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.gallery__images {
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.gallery__images img {
+  max-width: 100%;
+  -webkit-box-shadow: 0 2px 5px #262626;
+          box-shadow: 0 2px 5px #262626;
+}
+
+.gallery__button {
+  width: 200px;
+  height: 54px;
+  margin: 0 auto;
+  padding: 20px 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #5585a2;
+  -webkit-box-shadow: 0 0 3px #262626;
+          box-shadow: 0 0 3px #262626;
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 300;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.gallery__button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0px;
+  background-color: #005285;
+  opacity: 0.5;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.gallery__button:hover::before {
+  height: 54px;
+}
+
+.gallery__button:active {
+  -webkit-transition: -webkit-transform 0.1s ease;
+  transition: -webkit-transform 0.1s ease;
+  transition: transform 0.1s ease;
+  transition: transform 0.1s ease, -webkit-transform 0.1s ease;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-box-shadow: inset 0 0 3px 1px #262626;
+          box-shadow: inset 0 0 3px 1px #262626;
+}
+
+@media screen and (max-width: 979px) {
+  .gallery {
+    padding: 50px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gallery {
+    padding: 30px 0;
+  }
+  .gallery__title {
+    font-size: 70px;
+    margin-bottom: 20px;
+  }
+  .gallery__images {
+    margin-bottom: 40px;
+  }
+  .gallery .col {
+    padding: 10px;
+  }
+  .gallery .col_special {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery {
+    padding: 15px 0;
+  }
+  .gallery__title {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .gallery__subtext {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .gallery__images {
+    margin-bottom: 10px;
+  }
+  .gallery .col {
+    padding: 5px;
+  }
+  .gallery .col_special {
+    padding-bottom: 10px;
+  }
+}
+
+.row {
+  margin: 0 -15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.col {
+  padding: 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+}
+
+.col_special {
+  padding-bottom: 30px;
+}
+
+.col-8 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% / 12 * 8);
+          flex: 0 0 calc(100% / 12 * 8);
+  max-width: calc(100% / 12 * 8);
+}
+
+.col-4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% / 12 * 4);
+          flex: 0 0 calc(100% / 12 * 4);
+  max-width: calc(100% / 12 * 4);
+}
+
+.col-6 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% / 12 * 6);
+          flex: 0 0 calc(100% / 12 * 6);
+  max-width: calc(100% / 12 * 6);
+}
+
+.col-12 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% / 12 * 12);
+          flex: 0 0 calc(100% / 12 * 12);
+  max-width: calc(100% / 12 * 12);
+}
+/*# sourceMappingURL=gallery.css.map */
