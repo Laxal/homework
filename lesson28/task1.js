@@ -1,21 +1,21 @@
 class Circle {
-    radius; // ? Чомy без цього поля видає помилку Maximum call stack size exceeded
+    radius;
 
 
     constructor(r) {
         this.radius = r;
     }
 
-    get radius() {
+    get radiusValue() {
         return this.radius;
     }
 
-    set radius(newRadius) {
+    set radiusValue(newRadius) {
         if (newRadius <= 0) {
             console.log('Помилка вводу');
             return;
         }
-        this._radius = newRadius;
+        this.radius = newRadius;
     }
 
     get diameter() {
@@ -34,14 +34,14 @@ class Circle {
 // test ===========================================================================
 
 let circle1 = new Circle(5);
-let circle2 = new Circle(1);
+let circle2 = new Circle(0);
 
-console.log(circle1.calcSquare());
-console.log(circle1.calcPerimetr());
-console.log(circle1.radius);
-circle1.radius(1);
-console.log(circle1.radius);
-console.log(circle1.diameter);
+// console.log(circle1.calcSquare());
+// console.log(circle1.calcPerimetr());
+// console.log(circle1.radius);
+// circle1.radiusValue = 0;
+// console.log(circle2.radius);
+// console.log(circle1.diameter);
 
 
 
