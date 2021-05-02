@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/iconfont.css">
+    <link rel="stylesheet" href="/css/MuseoFont.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>homework11_2</title>
+</head>
+
+<body>
+    <form class="card">
+        <img src="/img/logo.svg" alt="logo" class="card__logo">
+        <div class="card__sneakers">
+            <input type="radio" name="select-color" id="blue" checked class="select-color select-color_blue">
+            <input type="radio" name="select-color" id="white" class="select-color select-color_white">
+            <input type="radio" name="select-color" id="red" class="select-color select-color_red">
+            <input type="radio" name="select-color" id="aqua" class="select-color select-color_aqua">
+            <div class="slider">
+                <img src="/img/Nike-SB-Stefan-Janoski-Max.png" alt="nike-sneakers"
+                    class="card__img-sneakers card__img-sneakers_1">
+                <img src="/img/Nike-SB-Stefan-Janoski-Max-white.png" alt="nike-sneakers"
+                    class="card__img-sneakers card__img-sneakers_2">
+                <img src="/img/Nike-SB-Stefan-Janoski-Max-red.png" alt="nike-sneakers"
+                    class="card__img-sneakers card__img-sneakers_3">
+                <img src="/img/Nike-SB-Stefan-Janoski-Max-aqua.png" alt="nike-sneakers"
+                    class="card__img-sneakers card__img-sneakers_4">
+            </div>
+            <div class="controls">
+                <label for="blue"></label>
+                <label for="white"></label>
+                <label for="red"></label>
+                <label for="aqua"></label>
+            </div>
+        </div>
+        <div class="card__about about">
+            <h2 class="about__name">Nike SB Stefan<br>
+                Janoski Max</h2>
+            <h3 class="about__type">Unisex Skateboarding Shoe</h3>
+            <div class="about__rating rating">
+                <input id="rating-5" type="radio" name="rating" value="5">
+                <label for="rating-5">
+                    <i class="icon-star"></i>
+                </label>
+                <input id="rating-4" type="radio" name="rating" value="4">
+                <label for="rating-4">
+                    <i class="icon-star"></i>
+                </label>
+                <input id="rating-3" type="radio" name="rating" value="3">
+                <label for="rating-3">
+                    <i class="icon-star"></i>
+                </label>
+                <input id="rating-2" type="radio" name="rating" value="2">
+                <label for="rating-2">
+                    <i class="icon-star"></i>
+                </label>
+                <input id="rating-1" type="radio" name="rating" value="1">
+                <label for="rating-1">
+                    <i class="icon-star"></i>
+                </label>
+            </div>
+            <div class="about__select">
+                <select required name="select-size" class="about__select-size">
+                    <option selected disabled value="">Size</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                    <option value="44">44</option>
+                    <option value="45">45</option>
+                </select>
+                <select required name="select-qty" class="about__select-Qty">
+                    <option selected disabled value="">Qty</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <button type="submit" class="about__button">Add to cart</button>
+        </div>
+    </form>
+</body>
+
+</html>
