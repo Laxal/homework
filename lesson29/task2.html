@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson29 task2</title>
+
+    <style>
+        .modal-window {
+            border: 4px solid black;
+            background-color: #279;
+            color: #fff;
+            box-shadow: 0px 0px 5px black;
+            opacity: 0;
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 50%;
+            height: auto;
+            padding: 20px;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            transition: all 1s ease;
+        }
+
+        .visible {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="open-button">Open</button>
+    <div class="modal-window">
+        <h1>This is the modal window</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ipsum fugiat repellat facilis quasi
+            molestiae placeat impedit quam veritatis tempora voluptatibus nemo necessitatibus deleniti, dolorum suscipit
+            nobis, illum rerum odit!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia et tenetur quaerat officiis adipisci unde
+            aliquam labore similique cum iusto asperiores veniam autem ea, aut eligendi ad quia ut? Voluptate.
+        </p>
+        <button class="close-button">Close</button>
+    </div>
+
+    <script src="/task2.js"></script>
+</body>
+
+</html>
